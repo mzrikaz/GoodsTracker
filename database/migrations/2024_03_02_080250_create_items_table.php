@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->decimal('unit_count');
-            $table->string('unit');
+            $table->string('unit'); //kg, ml, l
             $table->foreignId('category_id');
             $table->timestamps();
         });
