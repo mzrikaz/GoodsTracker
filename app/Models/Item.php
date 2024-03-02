@@ -11,7 +11,7 @@ class Item extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name','category_id'];
+    protected $fillable = ['name','unit_count','unit','category_id'];
 
     /**
      * Get the category that owns the Item
